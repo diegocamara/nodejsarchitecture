@@ -1,0 +1,20 @@
+{
+  "development": {
+    "dialect": "mysql",
+    "storage": "localhost:3306/productdeliverydb"
+  },
+  "test":{
+    "username": "root",
+    "password": "1234567",
+    "database": "productdeliverydb",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production":{
+    "username": "root",
+    "password": "1234567",
+    "database": "productdeliverydb",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}
