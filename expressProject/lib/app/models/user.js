@@ -1,5 +1,7 @@
+"use strict"
+
 module.exports = function(sequelize, DataTypes){
-  return sequelize.define('user', {
+  var User = sequelize.define('User', {
     id:{
       type: DataTypes.INTEGER,
       autoIncrement: true,
@@ -7,13 +9,15 @@ module.exports = function(sequelize, DataTypes){
     },
     firstName:{
       type: DataTypes.STRING,
-      field: 'firstName'
+      field: 'FIRSTNAME'
       },
     lastName:{
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      field: 'LASTNAME'
       }
     },
     {
       freezeTableName: true
     });
-}
+    return User;
+};
